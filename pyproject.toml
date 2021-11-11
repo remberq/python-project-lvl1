@@ -9,12 +9,11 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.8"
+prompt = "^0.4.1"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
 
-[tool.poetry.dev-dependencies]
-enter-leave = "0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
