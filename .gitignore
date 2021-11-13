@@ -10,3 +10,4 @@ coverage.xml
 .idea
 .whl
 .gz
+poetry.lock
