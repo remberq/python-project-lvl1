@@ -1,9 +1,13 @@
 name: hexlet-action
 on: [push]
 jobs:
-  test-job:
+  linter-test:
     runs-on: ubuntu-latest
     steps:
-      - uses: make lint
+      - name: linter-check
+        run:
+                pip install poetry
+                make lint
+           
 
 
