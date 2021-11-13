@@ -4,6 +4,6 @@ jobs:
   test-job:
     runs-on: ubuntu-latest
     steps:
-      - run: poetry run flake8 brain_games
+      - uses: make lint
 
 
