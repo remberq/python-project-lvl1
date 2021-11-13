@@ -1,9 +1,9 @@
 name: hexlet-action
 on: [push]
 jobs:
-  Hexlet-Actions:
+  test-job:
     runs-on: ubuntu-latest
     steps:
-      - run: make lint
+      - run: poetry run flake8 brain_games
 
 
