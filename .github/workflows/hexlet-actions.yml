@@ -1,9 +1,9 @@
-name: GitHub Actions Demo
+name: hexlet-action
 on: [push]
 jobs:
   Hexlet-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: make init
+      - run: make lint
 
 
