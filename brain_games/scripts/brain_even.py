@@ -22,7 +22,8 @@ def welcome_user():
 
             elif random_number % 2 == 0 and guess.lower() == 'no':
                 return print(f'"{guess.lower()}" is wrong answer ;(. '
-                             f'Correct answer was "yes"\nLet\'s try again, {name}!')
+                             f'Correct answer was "yes"\n'
+                             f'Let\'s try again, {name}!')
 
             elif random_number % 2 != 0 and guess.lower() == 'no':
                 count += 1
@@ -30,11 +31,11 @@ def welcome_user():
 
             else:
                 return print(f'"{guess.lower()}" is wrong answer ;(. '
-                             f'Correct answer was "no"\nLet\'s try again, {name}!')
+                             f'Correct answer was "no"\n'
+                             f'Let\'s try again, {name}!')
 
         if count == 3:
-            return print(f'Congatulations, {name}!')
-
+            return print(f'Congratulations, {name}!')
 
     even()
 
