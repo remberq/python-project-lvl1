@@ -32,7 +32,6 @@ def random_generate(start=1, stop=100):
 def list_numbers(num1, num2, num3):
     list_of_num = []
     i = 0
-
     for el in range(num1, num2, num3):
         if i < 11:
             i += 1
