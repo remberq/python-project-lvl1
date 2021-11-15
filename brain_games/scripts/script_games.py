@@ -29,6 +29,17 @@ def random_generate(start=1, stop=100):
     return num
 
 
+def list_numbers(num1, num2, num3):
+    list_of_num = []
+    i = 0
+
+    for el in range(num1, num2, num3):
+        if i < 11:
+            i += 1
+            list_of_num.append(el)
+    return list_of_num
+
+
 def wrong_result(answer, right_answer, name):
     print(f'"{answer}" is wrong answer ;(. '
           f'Correct answer was {right_answer}\n'
