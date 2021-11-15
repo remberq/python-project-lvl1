@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
-import random
+from brain_games.scripts.script_games import random_generate as rg
 
 
 def even(name):
+
+    print('Answer "yes" if number is even, otherwise answer "no".')
     count = 0
 
     while count < 3:
-        random_number = random.randrange(1, 100)
+        random_number = rg()
         print(f'Question: {random_number}')
         guess = input('Your answer: ').lower()
 

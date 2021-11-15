@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import prompt
+import random
 
 
 def greetings():
@@ -13,18 +14,29 @@ def greetings():
     return welcome_user()
 
 
-def questions_even():
-    print('Answer "yes" if number is even, otherwise answer "no".')
+def gcd_game(num_1, num_2):
+    while num_1 != 0 and num_2 != 0:
+        if num_1 > num_2:
+            num_1 = num_1 % num_2
+
+        else:
+            num_2 = num_2 % num_1
+    return num_2 + num_1
 
 
-def questions_calc():
-    print('What is the result of the expression?')
+def random_generate(start=1, stop=100):
+    num = random.randrange(start, stop)
+    return num
+
+
+def wrong_result(answer, right_answer, name):
+    print(f'"{answer}" is wrong answer ;(. '
+          f'Correct answer was {right_answer}\n'
+          f'Let\'s try again, {name}!')
 
 
 def main():
     greetings()
-    questions_even()
-    questions_calc()
 
 
 if __name__ == '__main__':
