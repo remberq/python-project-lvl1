@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from operator import add, mul, sub
-import random
 import prompt
+import random
 
 
 def start_calc():
@@ -11,6 +11,7 @@ def start_calc():
     name = prompt.string("May I have your name? ")
     print(f"Hello, {name}!")
     print('What is the result of the expression?')
+
     for i in range(3):
         num1, num2 = random.randint(1, 100), random.randint(1, 100)
         action = random.randint(1, 3)
