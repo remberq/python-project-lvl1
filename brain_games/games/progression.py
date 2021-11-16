@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+
 from brain_games.scripts.script_games import random_generate as rg
 from brain_games.scripts.script_games import list_numbers as ln
 from brain_games.scripts.script_games import wrong_result as wr
@@ -18,8 +18,9 @@ def game_progression(name):
         list_num = ln(n1, n2, n3)
         right_answer = str(list_num.pop(n4))
         list_num.insert(n4, '..')
+        new_list = [str(a) for a in list_num]
 
-        print(f'Question: {list_num}')
+        print(f'Question: {" ".join(new_list)}')
         answer = input('Your answer: ')
 
         if answer == right_answer:
