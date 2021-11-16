@@ -20,3 +20,5 @@ brain-progression:
 	poetry run brain-progression
 aci:
 	asciinema rec
+brain-prime:
+	poetry run brain-prime

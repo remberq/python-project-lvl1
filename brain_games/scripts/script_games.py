@@ -41,7 +41,7 @@ def list_numbers(num1, num2, num3):
 
 def wrong_result(answer, right_answer, name):
     print(f'"{answer}" is wrong answer ;(. '
-          f'Correct answer was {right_answer}\n'
+          f'Correct answer was "{right_answer}"\n'
           f'Let\'s try again, {name}!')
 
 
