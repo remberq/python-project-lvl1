@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
-from brain_games.scripts.script_games import greetings
-from brain_games.games.calc import calc
+from brain_games.games.calc import start_calc
 
 
 def calculated_game():
-    name = greetings()
-    calc(name)
+    start_calc()
 
 
 def main():
