@@ -1,5 +1,6 @@
-#!/usr/bin/env python3
+
 from brain_games.scripts.script_games import wrong_result, random_generate
+import random
 
 
 def calc(name):
@@ -10,38 +11,37 @@ def calc(name):
 
         num_1 = random_generate(50, 100)
         num_2 = random_generate(1, 50)
-        symbol = random_generate(1, 4)
+        symbol = ['-', '*', '+']
+        i = random.randrange(len(symbol))
+        print(symbol[i])
 
-        if symbol == 1:
-            print(f'Question: {num_1} + {num_2}')
-            answer = input('Your answer: ')
-            right_answer = str(num_1 + num_2)
-            if answer == right_answer:
-                print('Correct!')
-                score += 1
-
-            else:
-                return wrong_result(answer, right_answer, name)
-
-        if symbol == 2:
-            print(f'Question: {num_1} - {num_2}')
+        if i == 0:
+            print(f'Question: {num_1} {symbol[i]} {num_2}')
             answer = input('Your answer: ')
             right_answer = str(num_1 - num_2)
             if answer == right_answer:
                 print('Correct!')
                 score += 1
-
             else:
                 return wrong_result(answer, right_answer, name)
 
-        if symbol == 3:
-            print(f'Question: {num_1} * {num_2}')
+        elif i == 1:
+            print(f'Question: {num_1} {symbol[i]} {num_2}')
             answer = input('Your answer: ')
             right_answer = str(num_1 * num_2)
             if answer == right_answer:
                 print('Correct!')
                 score += 1
+            else:
+                return wrong_result(answer, right_answer, name)
 
+        else:
+            print(f'Question: {num_1} {symbol[i]} {num_2}')
+            answer = input('Your answer: ')
+            right_answer = str(num_1 + num_2)
+            if answer == right_answer:
+                print('Correct!')
+                score += 1
             else:
                 return wrong_result(answer, right_answer, name)
 
